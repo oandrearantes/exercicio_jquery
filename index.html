@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Digite a tarefa" required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        <div id="task-counter">
+            <p class="completed-task">Tarefas Cumpridas: <span id="completed-tasks">0</span></p>
+            <p class="pending-task">Tarefas Pendentes: <span id="pending-tasks">0</span></p>
+            <p class="total-task">Total de Tarefas: <span id="total-tasks">0</span></p>       
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
